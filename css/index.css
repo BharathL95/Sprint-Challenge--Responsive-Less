@@ -1,3 +1,10 @@
+.third-img {
+  display: flex;
+  align-self: center;
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -129,9 +136,12 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
+html {
+  font-size: 62.5%;
+}
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
 }
 h1,
 h2,
@@ -139,4 +149,130 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+header {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+header .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 400px) {
+  header nav {
+    width: 80%;
+  }
+}
+h1 {
+  color: #444958;
+  font-size: 34px;
+  line-height: 50px;
+}
+footer {
+  background-color: #F2F2F2;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border: 1px solid gray;
+  border-bottom: 0px;
+  border-radius: 5px;
+}
+.container {
+  color: #212529;
+  margin: 0px 150px;
+}
+@media screen and (max-width: 400px) {
+  .container {
+    margin: 0px;
+  }
+}
+.container .header-img {
+  width: 100%;
+  height: 15rem;
+}
+.container .top {
+  padding: 10px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gray;
+}
+.container .top .top-imgs-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.container .top .top-imgs-container .top-img-1 {
+  display: flex;
+  align-self: center;
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 400px) {
+  .container .top .top-imgs-container .top-img-1 {
+    width: 90%;
+  }
+}
+.container .top .top-imgs-container .top-img-2 {
+  display: flex;
+  align-self: center;
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 400px) {
+  .container .top .top-imgs-container .top-img-2 {
+    display: none;
+  }
+}
+.container .bottom {
+  padding: 20px 30px;
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+@media screen and (max-width: 400px) {
+  .container .bottom {
+    flex-direction: column;
+  }
+}
+.container .bottom .bottom-text {
+  width: 50%;
+}
+@media screen and (max-width: 400px) {
+  .container .bottom .bottom-text {
+    width: 100%;
+  }
+}
+.container .bottom .bottom-img {
+  width: 50%;
+  height: 50%;
+}
+@media screen and (max-width: 400px) {
+  .container .bottom .bottom-img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+}
+.container .bottom button {
+  font-size: 12px;
+  background-color: #22283A;
+  color: white;
+  border: 1px solid blue;
+  padding: 10px;
+  border-radius: 5px;
+}
+h2 {
+  font-size: 24px;
+  color: #22283A;
 }
